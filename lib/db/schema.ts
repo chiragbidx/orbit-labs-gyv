@@ -1,4 +1,4 @@
-import { pgTable, text, timestamp, uniqueIndex } from "drizzle-orm/pg-core";
+import { pgTable, text, timestamp, uniqueIndex, decimal } from "drizzle-orm/pg-core";
 import { sql } from "drizzle-orm";
 
 export const users = pgTable("users", {
@@ -32,6 +32,36 @@ export const teams = pgTable("teams", {
     .notNull()
     .defaultNow(),
 });
+
+// Subscription table for team-based billing
+export const subscriptions = pgTable(
+  "subscriptions",
+  {
+    id: text("id")
+      .notNull()
+      .default(sql`gen_random_uuid()`)
+      .primaryKey(),
+    teamId: text("team_id")
+      .notNull()
+      .references(() => teams.id, { onDelete: "cascade" }),
+    stripeCustomerId: text("stripe_customer_id").notNull(),
+    stripeSubscriptionId: text("stripe_subscription_id").notNull(),
+    plan: text("plan").notNull(), // E.g. free, pro, etc.
+    status: text("status").notNull(), // active, canceled, past_due, trialing, etc.
+    price: decimal("price", { precision: 10, scale: 2 }).notNull(),
+    currency: text("currency").notNull().default("usd"),
+    currentPeriodStart: timestamp("current_period_start", { withTimezone: true }),
+    currentPeriodEnd: timestamp("current_period_end", { withTimezone: true }),
+    cancelAtPeriodEnd: text("cancel_at_period_end").notNull().default("false"),
+    canceledAt: timestamp("canceled_at", { withTimezone: true }),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (table) => [
+    uniqueIndex("subscriptions_team_idx").on(table.teamId),
+    uniqueIndex("subscriptions_stripe_sub_idx").on(table.stripeSubscriptionId),
+  ]
+);
 
 export const teamMembers = pgTable(
   "team_members",
