@@ -40,7 +40,7 @@ const sections: { title: string; items: NavItem[] }[] = [
     title: "Account",
     items: [
       { label: "Team", href: "/dashboard/team", icon: Users },
-      { label: "Billing", href: "#", icon: CreditCard, disabled: true },
+      { label: "Billing", href: "/dashboard/subscription", icon: CreditCard },
       { label: "Settings", href: "/dashboard/settings", icon: Settings },
     ],
   },
