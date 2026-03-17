@@ -164,23 +164,23 @@ export type HomeContent = {
 export const defaultHomeContent: HomeContent = {
   // ── Hero ─────────────────────────────────────────────────────────────────
   hero: {
-    badgeInner: "Launch",
-    badgeOuter: "Panda SaaS starter is ready",
-    titleBefore: "Build your next",
-    titleHighlight: "SaaS",
-    titleAfter: "app in days, not weeks",
+    badgeInner: "StripePilot",
+    badgeOuter: "The modern SaaS dashboard boilerplate",
+    titleBefore: "Scale your next",
+    titleHighlight: "Stripe-style",
+    titleAfter: "startup with confidence",
     subtitle:
-      "Panda gives you authentication, billing-ready patterns, team flows, and polished UI foundations so you can ship faster with confidence.",
-    primaryCta: { label: "Start Building", href: "#pricing" },
-    secondaryCta: { label: "Explore features", href: "#features" },
+      "StripePilot accelerates your SaaS product with authentication, team workspaces, polished components, and a real Stripe-inspired dashboard.",
+    primaryCta: { label: "Get Started", href: "#pricing" },
+    secondaryCta: { label: "See Features", href: "#features" },
     heroImageLight: "/hero-image-light.jpeg",
     heroImageDark: "/hero-image-dark.jpeg",
-    heroImageAlt: "Panda dashboard preview",
+    heroImageAlt: "StripePilot dashboard preview",
   },
 
   // ── Sponsors ─────────────────────────────────────────────────────────────
   sponsors: {
-    heading: "Built with trusted tools",
+    heading: "Powered by industry leaders",
     items: [
       { icon: "Crown", name: "Vercel" },
       { icon: "Vegan", name: "Stripe" },
@@ -194,30 +194,30 @@ export const defaultHomeContent: HomeContent = {
 
   // ── Benefits ─────────────────────────────────────────────────────────────
   benefits: {
-    eyebrow: "Why Panda",
-    heading: "A practical SaaS app builder starter",
+    eyebrow: "Why StripePilot",
+    heading: "Your Stripe-inspired SaaS starter",
     description:
-      "Built for teams that want production-ready foundations with room to customize, not a rigid template you outgrow in a week.",
+      "Get production-ready architecture, Stripe-standard UX, and blazing fast iteration for your next SaaS startup. Stop paying dev-tax on boilerplate.",
     items: [
       {
         icon: "Blocks",
-        title: "Ship With Confidence",
-        description: "Start from proven architecture and avoid redoing auth, layout, and deployment setup.",
+        title: "Production-Ready Foundation",
+        description: "Modern stack, robust multi-tenant support, and proven patterns help you avoid startup rework.",
       },
       {
         icon: "LineChart",
-        title: "Faster Time To Revenue",
-        description: "Focus on product validation while the starter handles the repetitive engineering basics.",
+        title: "Designed for Velocity",
+        description: "Jump-start dashboard, auth, and onboarding with Stripe-caliber polish.",
       },
       {
         icon: "Wallet",
-        title: "Lower Build Cost",
-        description: "Reusable components and patterns reduce rework and keep your team moving efficiently.",
+        title: "Lower Engineering Cost",
+        description: "Reusable logic, team flows, and integrated payments keep you focused on your differentiator.",
       },
       {
         icon: "Sparkle",
-        title: "Cleaner UX By Default",
-        description: "Responsive sections, dark mode, and polished UI primitives create a premium first impression.",
+        title: "World-Class UX",
+        description: "Dark mode, clean design, and Stripe-inspired UI out of the box.",
       },
     ],
   },
@@ -225,57 +225,55 @@ export const defaultHomeContent: HomeContent = {
   // ── Features ─────────────────────────────────────────────────────────────
   features: {
     eyebrow: "Features",
-    heading: "What you get out of the box",
+    heading: "Everything SaaS teams demand",
     subtitle:
-      "Panda combines developer speed and production-grade UX so you can spend your time shipping features instead of rebuilding starter infrastructure.",
+      "StripePilot delivers scalable dashboard logic, tested database models, and delightfully clean UI for payments, teams, and more.",
     items: [
-      { icon: "TabletSmartphone", title: "Responsive By Default", description: "Every section is optimized for mobile and desktop without extra layout work." },
-      { icon: "BadgeCheck", title: "Battle-Tested Patterns", description: "Uses dependable UI and architecture conventions teams can maintain long-term." },
-      { icon: "Goal", title: "Product-Focused Structure", description: "Clear section hierarchy designed to communicate value and drive activation." },
-      { icon: "PictureInPicture", title: "Polished Visual Foundation", description: "Modern cards, spacing, and motion cues that are easy to extend for your brand." },
-      { icon: "MousePointerClick", title: "Conversion-Ready CTA Flow", description: "Strategic calls-to-action and section order help users move to signup quickly." },
-      { icon: "Newspaper", title: "Documentation-Friendly", description: "Readable code and section boundaries make onboarding new contributors easier." },
+      { icon: "TabletSmartphone", title: "Responsive Across Devices", description: "Built for desktop and mobile from day one." },
+      { icon: "BadgeCheck", title: "Production-Grade Auth", description: "Email + password flows, email verification, password reset, team invites, and role management." },
+      { icon: "Goal", title: "Team-First Structure", description: "Workspaces, roles, and invitation flows modeled after the best SaaS products." },
+      { icon: "CreditCard", title: "Billing-Ready Paths", description: "Plan models and billing hooks—just plug your Stripe account." },
+      { icon: "MousePointerClick", title: "Strategic CTAs", description: "Smart calls to action drive users from demo to paid plan." },
+      { icon: "Sparkles", title: "Stripe-Caliber UI", description: "Polished design, clean sections, and an adaptive dashboard shell." },
     ],
   },
 
   // ── Services ─────────────────────────────────────────────────────────────
   services: {
     eyebrow: "Services",
-    heading: "Core starter capabilities",
+    heading: "What StripePilot gives you",
     subtitle:
-      "A pragmatic baseline for SaaS products that need to move quickly without sacrificing quality.",
+      "Move from zero to Stripe-inspired dashboard with proven code, not half-baked templates.",
     items: [
-      { title: "Authentication Foundation", description: "Ready-to-extend auth scaffolding for email, OAuth, and organization-based access.", pro: false },
-      { title: "Billing-Ready Structure", description: "Plan models and upgrade flow patterns prepared for Stripe or your payment provider.", pro: false },
-      { title: "Developer Experience", description: "TypeScript, linting, and component primitives configured for team velocity.", pro: false },
-      { title: "Production Hardening", description: "Security-minded defaults, reusable UI states, and maintainable section architecture.", pro: true },
+      { title: "Enterprise-Ready Auth", description: "Credential flow, roles, invitations, and verification included.", pro: false },
+      { title: "Payments Foundation", description: "Billing models and upgrade mechanics ready for Stripe integration.", pro: false },
+      { title: "SaaS Multi-Tenancy", description: "Team-based workspaces right out of the gate.", pro: false },
+      { title: "Launch with Confidence", description: "Deploy-grade, proven UI. Standardize your SaaS surface.", pro: true },
     ],
   },
 
   // ── Testimonials ─────────────────────────────────────────────────────────
   testimonials: {
     eyebrow: "Testimonials",
-    heading: "Teams shipping with Panda",
+    heading: "Builders scaling with StripePilot",
     reviews: [
-      { image: "/demo-img.jpg", name: "Aarav Shah", role: "Founder, FinchFlow", comment: "Panda saved us weeks of setup. We launched our first paying plan in less than a sprint.", rating: 5.0 },
-      { image: "/demo-img.jpg", name: "Maya Patel", role: "Product Lead, OrbitDesk", comment: "The section structure and component quality made it easy to ship a polished onboarding flow quickly.", rating: 4.8 },
-      { image: "/demo-img.jpg", name: "Nikhil Rao", role: "CTO, TeamForge", comment: "We replaced our old starter with Panda and reduced front-end rework dramatically.", rating: 4.9 },
-      { image: "/demo-img.jpg", name: "Emma Brooks", role: "Head of Growth, Nimbus", comment: "The default layout is conversion-friendly and easy to adapt to our brand.", rating: 5.0 },
-      { image: "/demo-img.jpg", name: "Daniel Kim", role: "Engineering Manager, PulseOps", comment: "Great developer ergonomics. New engineers onboarded fast and started shipping immediately.", rating: 5.0 },
-      { image: "/demo-img.jpg", name: "Sofia Green", role: "Founder, LaunchPad AI", comment: "Exactly what we needed for an MVP: clean code, strong UI, and a sensible section flow.", rating: 4.9 },
+      { image: "/demo-img.jpg", name: "Aarav Shah", role: "CTO, AtlasWorks", comment: "StripePilot gave us a Stripe-caliber look and SaaS features instantly. Onboarded our team and shipped in days.", rating: 5.0 },
+      { image: "/demo-img.jpg", name: "Olivia Chen", role: "Head of Product, GrowthLeap", comment: "The ready-to-go auth, billing, and dashboard convinced our founders StripePilot was our MVP's fastest path to launch.", rating: 5.0 },
+      { image: "/demo-img.jpg", name: "Lucas Hu", role: "Engineering Lead, Substacker", comment: "StripePilot means we spend zero time on onboarding or redoing user flows. It works out-of-the-box.", rating: 4.9 },
+      { image: "/demo-img.jpg", name: "Zara Klein", role: "Founder, PilotLead", comment: "Startup UI on day one and multi-tenant teams were the real unlock. Can't recommend StripePilot enough.", rating: 5.0 },
     ],
   },
 
   // ── Team ─────────────────────────────────────────────────────────────────
   team: {
-    eyebrow: "Team",
-    heading: "Meet the Panda team",
+    eyebrow: "StripePilot",
+    heading: "Meet the StripePilot Team",
     members: [
       {
         imageUrl: "/team1.jpg",
-        firstName: "Leo",
-        lastName: "Miranda",
-        positions: ["Lead Engineer", "Starter Architecture"],
+        firstName: "Chirag",
+        lastName: "Dodiya",
+        positions: ["Founder", "Product Engineer"],
         socialNetworks: [
           { name: "LinkedIn", url: "https://www.linkedin.com/in/leopoldo-miranda/" },
           { name: "Github", url: "https://github.com/leoMirandaa" },
@@ -313,45 +311,6 @@ export const defaultHomeContent: HomeContent = {
           { name: "X", url: "https://x.com/leo_mirand4" },
         ],
       },
-      {
-        imageUrl: "/team2.jpg",
-        firstName: "Michael",
-        lastName: "Holland",
-        positions: ["DevOps Engineer", "CI/CD"],
-        socialNetworks: [
-          { name: "LinkedIn", url: "https://www.linkedin.com/in/leopoldo-miranda/" },
-        ],
-      },
-      {
-        imageUrl: "/team3.jpg",
-        firstName: "Zoe",
-        lastName: "Garcia",
-        positions: ["Frontend Engineer", "Design Systems"],
-        socialNetworks: [
-          { name: "LinkedIn", url: "https://www.linkedin.com/in/leopoldo-miranda/" },
-          { name: "Github", url: "https://github.com/leoMirandaa" },
-        ],
-      },
-      {
-        imageUrl: "/team1.jpg",
-        firstName: "Evan",
-        lastName: "James",
-        positions: ["Backend Engineer"],
-        socialNetworks: [
-          { name: "LinkedIn", url: "https://www.linkedin.com/in/leopoldo-miranda/" },
-          { name: "Github", url: "https://github.com/leoMirandaa" },
-          { name: "X", url: "https://x.com/leo_mirand4" },
-        ],
-      },
-      {
-        imageUrl: "/team2.jpg",
-        firstName: "Pam",
-        lastName: "Taylor",
-        positions: ["Fullstack Engineer", "Product UX"],
-        socialNetworks: [
-          { name: "X", url: "https://x.com/leo_mirand4" },
-        ],
-      },
     ],
   },
 
@@ -359,32 +318,50 @@ export const defaultHomeContent: HomeContent = {
   pricing: {
     eyebrow: "Pricing",
     heading: "Pricing for every stage",
-    subtitle: "Start lean, then scale to enterprise-grade workflows as your product grows.",
+    subtitle: "Free to start. Upgrade when you grow.",
     priceSuffix: "/month",
     plans: [
       {
         title: "Starter",
         popular: false,
         price: 0,
-        description: "Ideal for prototypes and small internal tools.",
-        buttonText: "Start for free",
-        benefits: ["Up to 3 teammates", "Basic auth patterns", "Core landing sections", "Community support", "Deploy-ready setup"],
+        description: "For early experiments and side projects.",
+        buttonText: "Start now",
+        benefits: [
+          "Up to 3 team members",
+          "Complete dashboard",
+          "User & team auth flows",
+          "Core StripePilot UI",
+          "Email support"
+        ],
       },
       {
-        title: "Growth",
+        title: "SaaS Team",
         popular: true,
         price: 49,
-        description: "Best for product teams shipping customer-facing SaaS.",
-        buttonText: "Start trial",
-        benefits: ["Unlimited teammates", "Advanced section set", "Billing-ready models", "Priority support", "Team workflows"],
+        description: "Perfect for growing SaaS products shipping to users.",
+        buttonText: "Start 14-day trial",
+        benefits: [
+          "Unlimited team seats",
+          "Advanced plans and billing hooks",
+          "Priority email support",
+          "Multi-tenant workspaces",
+          "Invite and role management",
+        ],
       },
       {
         title: "Enterprise",
         popular: false,
         price: 199,
-        description: "For teams requiring compliance, support SLAs, and custom rollout.",
+        description: "For regulated organizations and production at scale.",
         buttonText: "Contact sales",
-        benefits: ["Security review support", "SSO/SAML integration path", "Dedicated onboarding", "Phone and email support", "Architecture advisory"],
+        benefits: [
+          "Dedicated onboarding",
+          "Compliance support",
+          "SAML SSO/SCIM path",
+          "Custom feature engagements",
+          "Direct contact to engineering"
+        ],
       },
     ],
   },
@@ -392,41 +369,47 @@ export const defaultHomeContent: HomeContent = {
   // ── Contact ──────────────────────────────────────────────────────────────
   contact: {
     eyebrow: "Contact",
-    heading: "Talk to the Panda team",
+    heading: "Talk to the StripePilot team",
     description:
-      "Need help customizing the starter, planning architecture, or accelerating launch? Share your goals and timeline.",
-    mailtoAddress: "hello@panda.dev",
+      "Need help with the template, architecture, or Stripe integration? Let us know your goals and timeline.",
+    mailtoAddress: "chirag@bidx.ai",
     info: {
       address: { label: "Find us", value: "Remote-first • San Francisco, CA" },
-      phone: { label: "Call us", value: "+1 (415) 555-0199" },
-      email: { label: "Email us", value: "hello@panda.dev" },
-      hours: { label: "Visit us", value: ["Monday - Friday", "9AM - 6PM PT"] },
+      phone: { label: "Call us", value: "" },
+      email: { label: "Email us", value: "chirag@bidx.ai" },
+      hours: { label: "Available", value: ["Monday - Friday", "9AM - 6PM PT"] },
     },
-    formSubjects: ["Starter Demo", "Architecture Review", "Design System", "Billing Integration", "Enterprise Plan"],
-    formSubmitLabel: "Send inquiry",
+    formSubjects: [
+      "Working SaaS Demo",
+      "Stripe Integration",
+      "Dashboard Extension",
+      "Platform Partnership",
+      "Enterprise Inquiry"
+    ],
+    formSubmitLabel: "Send message",
   },
 
   // ── FAQ ──────────────────────────────────────────────────────────────────
   faq: {
     eyebrow: "FAQ",
-    heading: "Common Questions",
+    heading: "StripePilot Questions",
     items: [
-      { question: "Is Panda free to start with?", answer: "Yes. You can start with the core template and customize it for your product." },
-      { question: "Can I use this for a production SaaS app?", answer: "Yes. The starter is designed for production-minded teams with scalable structure and reusable UI patterns." },
-      { question: "Does it support dark mode and responsive design?", answer: "Yes. The template includes theme support and responsive layouts across major sections." },
-      { question: "Can I plug in my own auth and billing provider?", answer: "Yes. The structure is provider-agnostic and easy to adapt for your stack." },
-      { question: "How quickly can I launch with Panda?", answer: "Most teams can ship an MVP in days by reusing existing sections and starter patterns." },
+      { question: "Is StripePilot free to use?", answer: "Yes. Start on the Starter plan for free and upgrade only if you need cloud, team, or enterprise features." },
+      { question: "Can I launch a SaaS MVP with StripePilot?", answer: "Absolutely! StripePilot is designed for real SaaS launches and MVPs starting from day one." },
+      { question: "Is the dashboard really ready to deploy?", answer: "Yes. No demo placeholders. You get working dashboard, auth, database, and team logic out of the box." },
+      { question: "Does StripePilot work with my own Stripe account?", answer: "Yes. All billing wiring is built for easy plug-and-play with your own Stripe credentials." },
+      { question: "Can I extend features, models, and UI?", answer: "Definitely—StripePilot is designed for team-friendly extension, not as a rigid template." },
     ],
   },
 
   // ── Footer ───────────────────────────────────────────────────────────────
   footer: {
-    brandName: "Panda",
+    brandName: "StripePilot",
     columns: [
       {
         heading: "Contact",
         links: [
-          { label: "hello@panda.dev", href: "mailto:hello@panda.dev" },
+          { label: "chirag@bidx.ai", href: "mailto:chirag@bidx.ai" },
           { label: "Github", href: "#" },
           { label: "Twitter", href: "https://x.com" },
           { label: "Discord", href: "https://discord.com" },
@@ -443,7 +426,7 @@ export const defaultHomeContent: HomeContent = {
       {
         heading: "Help",
         links: [
-          { label: "Contact Us", href: "#contact" },
+          { label: "Get in Touch", href: "#contact" },
           { label: "FAQ", href: "#faq" },
           { label: "Docs", href: "https://nextjs.org/docs" },
         ],
@@ -457,13 +440,13 @@ export const defaultHomeContent: HomeContent = {
         ],
       },
     ],
-    copyright: "\u00a9 2026 Panda SaaS App Builder Starter.",
+    copyright: "\u00a9 2026 StripePilot. All rights reserved.",
     attribution: { label: "Built on Next.js", href: "https://nextjs.org" },
   },
 
   // ── Navbar ───────────────────────────────────────────────────────────────
   navbar: {
-    brandName: "Panda",
+    brandName: "StripePilot",
     routes: [
       { href: "/#testimonials", label: "Testimonials" },
       { href: "/#team", label: "Team" },
@@ -471,16 +454,16 @@ export const defaultHomeContent: HomeContent = {
       { href: "/#faq", label: "FAQ" },
     ],
     featureDropdownLabel: "Features",
-    featureImage: { src: "/demo-img.jpg", alt: "Panda preview" },
+    featureImage: { src: "/demo-img.jpg", alt: "StripePilot dashboard preview" },
     features: [
-      { title: "Auth, Billing, Teams", description: "Production-ready flows for sign-in, subscriptions, and organizations." },
-      { title: "UI + Design System", description: "Shadcn-based components with consistent theming and dark mode support." },
-      { title: "Deploy Fast", description: "Sane defaults for Next.js, TypeScript, and Vercel-first deployment." },
+      { title: "Ready-Made Auth & Teams", description: "Onboard users, teams, and billing in minutes." },
+      { title: "Stripe-Ready Billing", description: "Stripe-fluent models and billing logic as in production SaaS platforms." },
+      { title: "Deploy-First Workflow", description: "All config built for Vercel (prod) and Railway (dev) on day one." },
     ],
     signInLabel: "Sign in",
     signUpLabel: "Sign up",
     dashboardLabel: "Dashboard",
-    githubLink: { href: "https://nextjs.org/docs", ariaLabel: "View on GitHub" },
+    githubLink: { href: "https://github.com", ariaLabel: "View on GitHub" },
   },
 };
 
