@@ -14,5 +14,7 @@
   - Dashboard side chrome and branding changed from Panda to StripePilot.
   - Owner/contact email set to "chirag@bidx.ai" where appropriate.
   - Navbar updated brand reference, feature dropdowns, and all copy for StripePilot.
-  - All sections now reference StripePilot–no demo or generic placeholders left.
-  - Files updated: content/home.ts, app/dashboard/layout.tsx, components/layout/navbar.tsx, CHANGELOG.md.
+  - Refined DashboardContent and greeting message for StripePilot.
+  - Footer, hero, team section, and contact owner info set for StripePilot.
+  - Auth/signin/signup flow copy, modal and onboarding tailored to StripePilot.
+  - Files updated: content/home.ts, app/dashboard/layout.tsx, app/dashboard/page.tsx, app/dashboard/client.tsx, components/dashboard/dashboard-content.tsx, components/layout/navbar.tsx, components/home/LayoutContactSection.tsx, components/home/LayoutFooterSection.tsx, components/home/LayoutHeroSection.tsx, components/home/LayoutTeamSection.tsx, app/auth/client.tsx, CHANGELOG.md.
