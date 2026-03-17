@@ -55,7 +55,7 @@ export const LayoutContactSection = () => {
     const { firstName, lastName, email, subject, message } = values;
     console.log(values);
 
-    const mailToLink = `mailto:${contact.mailtoAddress}?subject=${subject}&body=Hello, I am ${firstName} ${lastName}. My email is ${email}. %0D%0A${message}`;
+    const mailToLink = `mailto:${contact.mailtoAddress}?subject=${encodeURIComponent(subject)}&body=Hello, I am ${firstName} ${lastName}. My email is ${email}. %0D%0A${encodeURIComponent(message)}`;
 
     window.location.assign(mailToLink);
   }
@@ -94,7 +94,7 @@ export const LayoutContactSection = () => {
                 <div className="font-bold">{contact.info.phone.label}</div>
               </div>
 
-              <div>{contact.info.phone.value}</div>
+              <div>{contact.info.phone.value || "(contact by email)"}</div>
             </div>
 
             <div>
@@ -137,7 +137,7 @@ export const LayoutContactSection = () => {
                       <FormItem className="w-full">
                         <FormLabel>First Name</FormLabel>
                         <FormControl>
-                          <Input placeholder="Leopoldo" {...field} />
+                          <Input placeholder="Chirag" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -150,7 +150,7 @@ export const LayoutContactSection = () => {
                       <FormItem className="w-full">
                         <FormLabel>Last Name</FormLabel>
                         <FormControl>
-                          <Input placeholder="Miranda" {...field} />
+                          <Input placeholder="Dodiya" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -218,7 +218,7 @@ export const LayoutContactSection = () => {
                         <FormControl>
                           <Textarea
                             rows={5}
-                            placeholder="Tell us about your SaaS idea, stage, and timeline..."
+                            placeholder="Tell us about your goals, product, or feature needs..."
                             className="resize-none"
                             {...field}
                           />
