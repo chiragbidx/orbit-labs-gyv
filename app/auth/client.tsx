@@ -93,15 +93,15 @@ export default function Client({ redirectTo, flashStatus, flashMessage }: Client
     if (mode === "signup") {
       return {
         id: "signup",
-        title: "Create account",
-        description: "Start your free account in less than a minute.",
+        title: "Create your StripePilot account",
+        description: "Start your SaaS journey in less than a minute.",
       };
     }
 
     return {
       id: "signin",
-      title: "Sign in",
-      description: "Use your email and password to continue.",
+      title: "Sign in to StripePilot",
+      description: "Secure authentication for your Stripe-style workspace.",
     };
   }, [mode]);
 
@@ -113,21 +113,20 @@ export default function Client({ redirectTo, flashStatus, flashMessage }: Client
           <div className="relative z-10 flex h-full flex-col justify-between">
             <div className="space-y-4">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary/80">
-                Panda Access
+                StripePilot Access
               </p>
               <h1 className="max-w-sm text-4xl font-semibold leading-tight tracking-tight">
-                Launch faster with one workspace for your team.
+                Scale your SaaS team with Stripe-inspired flows.
               </h1>
               <p className="max-w-md text-sm text-muted-foreground">
-                Secure auth, polished interface, and a clean onboarding flow built
-                for production teams.
+                Secure authentication, beautiful UI, and fast onboarding—built for your next Stripe-powered product.
               </p>
             </div>
 
             <div className="relative overflow-hidden rounded-2xl border border-secondary/70 bg-background/80 p-3 shadow-lg">
               <Image
                 src="/demo-img.jpg"
-                alt="Panda product preview"
+                alt="StripePilot product preview"
                 className="h-full w-full rounded-xl object-cover"
                 width={1200}
                 height={900}
