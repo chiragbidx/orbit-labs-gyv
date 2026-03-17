@@ -33,6 +33,7 @@ export default async function DashboardPage() {
     <Client
       greeting={getGreeting()}
       firstName={firstName}
+      brand="StripePilot"
     />
   );
 }
